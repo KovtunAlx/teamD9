@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 import { LogoSvg } from "../../components/logoSvg";
 import image1 from "../../images/image2.png";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export const HomePage = () => {
   const addToChrome = () => {
@@ -16,16 +16,14 @@ export const HomePage = () => {
       <img src={image1} alt={"about"} />
       <div className="content">
         <LogoSvg />
-        <p className="logoDescription">PTO Shopping Companion</p>
+        <p className="logoDescription">The smarter way to shop</p>
         <p className="title">
-          Level up your shopping
+          Time is money,
           <br />
-          experience with
-          <br />
-          unused paid time off{" "}
+          spend it!
         </p>
         <p className="description">
-          Get instant cash by signing up and applying.
+          Advance your unused PTO and spend the cash today
         </p>
         <button onClick={addToChrome} className="button">
           Add to Chrome - It’s Free

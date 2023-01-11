@@ -1,0 +1,50 @@
+.signIn-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+.signIn-leftSide {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 63px 58px;
+
+}
+.signIn-rightSide {
+    display: flex;
+    flex: 1;
+    background-color: #FF5277;
+}
+.signIn-logoDescription {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    margin: 0;
+}
+.signIn-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    color: #000624;
+    margin: 0;
+}
+.signIn-subtitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin: 0;
+}
+.signIn-signInContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
