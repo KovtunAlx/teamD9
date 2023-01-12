@@ -4,9 +4,21 @@ import signInImage from "../../images/signInPageImage.png";
 import "./styles.css";
 import jwt_decode from "jwt-decode";
 
-export const SingInPage = () => {
+export const SingInPage = ({
+  setCurrentUser,
+}: {
+  setCurrentUser: (v: { picture?: string; name?: string }) => void;
+}) => {
   const callback = (res: any) => {
-    console.log("bla res", jwt_decode(res.credential));
+    const user: { name: string; picture: string } = jwt_decode(res.credential);
+    setCurrentUser({
+      name: user.name,
+      picture: user.picture,
+    });
+    window.open(
+        "https://www.getsorbet.com/calculator-eoy",
+        "_self"
+      );
   };
   useEffect(() => {
     // @ts-ignore

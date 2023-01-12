@@ -2,14 +2,12 @@ import React from "react";
 import "./styles.css";
 import { LogoSvg } from "../../components/logoSvg";
 import image1 from "../../images/image2.png";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const HomePage = () => {
+  const navigate = useNavigate();
   const addToChrome = () => {
-    window.open(
-      "https://chrome.google.com/webstore/detail/honey-automatic-coupons-r/bmnlcjabgnpnenekpadlanbbkooimhnj",
-      "_self"
-    );
+    navigate("/addToChrome");
   };
   return (
     <div className="container">
@@ -28,7 +26,6 @@ export const HomePage = () => {
         <button onClick={addToChrome} className="button">
           Add to Chrome - It’s Free
         </button>
-        <Link to="/signIn">signIn</Link>
       </div>
     </div>
   );
