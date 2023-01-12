@@ -21,7 +21,8 @@ export const HomePage = () => {
           spend it!
         </p>
         <p className="description">
-          Advance your unused PTO and spend the cash today
+          The refreshing new way to turn your<br/>unused paid time off (PTO) into
+          cash for everyday<br/>purchases.
         </p>
         <button onClick={addToChrome} className="button">
           Add to Chrome - It’s Free
