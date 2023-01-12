@@ -9,7 +9,7 @@ export const AddToChromePage = () => {
   };
   return (
     <div className="addToChrome-container" onClick={pageClick}>
-      <img src={addToChromePng} alt={"add to chrome"} />
+      <img style={{width: "100%"}} src={addToChromePng} alt={"add to chrome"} />
     </div>
   );
 };
